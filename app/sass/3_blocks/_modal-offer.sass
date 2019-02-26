@@ -1,0 +1,141 @@
+.modal-offer
+	position: fixed
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+	background-color: rgba(0, 0, 0, .6)
+	display: none
+	justify-content: center
+	align-items: center
+	font-size: 16px	
+	line-height: 24px
+	color: #696969
+
+	&--show
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+
+.modal-offer__container
+	width: 780px
+	max-height: 505px
+	overflow: hidden
+	background-color: #fff
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	position: relative
+
+.modal-offer__img
+	flex-grow: 1
+	background-color: red
+	overflow: hidden
+	line-height: 0
+	font-size: 0
+
+.modal-offer__aside
+	width: 400px
+	padding: 60px 40px 0
+	position: relative
+
+	&::before
+		content: 'Особое предложение'
+		display: block
+		position: absolute
+		top: 31px
+		left: 41px
+		text-transform: uppercase
+		color: #d7b56d
+		font-size: 11px
+		letter-spacing: 1px
+
+.modal-offer__title
+	font-size: 32px
+	line-height: 38px
+	color: #212b49
+	font-weight: 400
+	margin: 0
+	margin-bottom: 13px
+
+.modal-offer__text
+	margin: 0
+	margin-bottom: 14px
+
+.modal-offer__links
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+
+.modal-offer__link
+	font-size: 14px
+	line-height: 16px
+	color: #d7b56d
+	text-decoration: none
+	padding-top: 11px
+	padding-bottom: 11px
+	padding-left: 25px
+	padding-right: 25px
+	border: 1px solid transparent
+
+	&--bg
+		background-color: #d7b56d
+		color: #fff
+
+.modal-offer__list
+	margin: 0
+	margin-bottom: 26px
+	padding: 0
+	list-style: none
+
+.modal-offer__list-item
+	padding-left: 40px
+	margin-bottom: 5px
+	position: relative
+
+	&::before
+		content: ''
+		display: block
+		width: 20px
+		height: 2px
+		background-color: #dabb78
+		position: absolute
+		left: 0
+		top: 50%
+		margin-top: -1px
+
+	&:last-child
+		margin-bottom: 0
+
+.modal-offer__btn-close
+	background-color: transparent
+	border: none
+	width: 24px
+	height: 24px
+	position: absolute
+	top: 35px
+	right: 40px
+	cursor: pointer
+
+	&::before,
+	&::after
+		content: ''
+		display: block
+		width: 30px
+		height: 1px
+		background-color: #989898
+		position: absolute
+		top: 11px
+		right: -3px
+
+	&::before
+		transform: rotate(45deg)
+
+	&::after
+		transform: rotate(-45deg)

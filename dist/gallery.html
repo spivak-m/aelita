@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Аэлита | Галерея</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <link rel="stylesheet" href="css/media.css"/>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__wrapper site-header__top"><a class="site-header__logo" href="/"><img src="media/img/site-logo.png" alt="Аэлита логотип"/></a>
+        <div class="site-header__contacts">
+          <div class="site-header__contacts-block site-header__contacts-block--tel"><a class="site-header__contacts-link cl-setsel">+7 (342) 420-20-90</a><a class="site-header__contacts-link cl-unsel">+7 (902) 63 000 66 </a></div>
+          <!--.site-header__contacts-block.site-header__contacts-block--addresa.site-header__contacts-link г. Березники, <br>ул. Пятилетки, 116а
+          -->
+          <div class="site-header__contacts-block site-header__contacts-block--feedback"><a class="site-header__contacts-feedback js-modalCallOpen" href="#modalCall">Обратная связь</a></div>
+          <div class="site-header__lang-switcher select-lang"><a class="site-header__lang-switcher-item site-header__lang-switcher-item--active" href="#">RU</a><a class="site-header__lang-switcher-item" href="#">EN</a></div>
+        </div>
+        <a href="#menu-popup" class="site-header__hamburger"></a>
+      </div>
+      <div class="site-header__bottom">
+        <div class="site-header__wrapper">
+          <div class="site-header__menu">
+            <nav class="menu">
+              <ul class="menu__list" id="menu-header_menu">
+                <li class="menu__item"><a class="menu__link" href="index.html">Главная</a></li>
+                <li class="menu__item"><a class="menu__link" href="about.html">Описание отеля</a></li>
+                <li class="menu__item"><a class="menu__link" href="gallery.html">Фотогалерея</a></li>
+                <li class="menu__item"><a class="menu__link" href="offers.html">Спец. предложения</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Ресторан</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Правила проживания</a></li>
+                <li class="menu__item"><a class="menu__link" href="contacts.html">Контакты</a></li>
+              </ul>
+            </nav>
+            <div class="site-header__contacts">
+              <div class="site-header__contacts-block site-header__contacts-block--tel">
+                <a class="site-header__contacts-link cl-setsel">+7 (342) 420-20-90</a>
+                <a class="site-header__contacts-link cl-unsel">+7 (902) 63 000 66</a>
+              </div>
+              <div class="site-header__contacts-block site-header__contacts-block--addres">
+                <a class="site-header__contacts-link">г. Березники, <br>ул. Пятилетки, 116а</a>
+              </div>
+              <div class="site-header__contacts-block site-header__contacts-block--feedback">
+                <a class="site-header__contacts-feedback js-modalCallOpen" href="#modalCall">Обратная связь</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+            <div class="page-header page-header--gallery">
+              <div class="page-header__wrapper">
+                <h2 class="page-header__title">Фотогалереея</h2>
+              </div>
+            </div>
+      <section class="booking">
+        <div class="booking__wrapper">
+          <div class="booking__title"><b>Забронировать номер</b></div>
+          <form class="booking__form" action="#" method="get">
+            <div class="booking__form-field-container">
+              <input class="booking__form-field booking__form-field--arrival" type="date" name="arrivalDate" value="2018-05-25"/>
+              <button class="booking__form-cal-btn" type="button"></button>
+            </div>
+            <div class="booking__form-field-container">
+              <input class="booking__form-field booking__form-field--departure" type="date" name="dateOfDeparture" value="2018-05-26"/>
+              <button class="booking__form-cal-btn" type="button"></button>
+            </div>
+            <button class="booking__form-submit" type="submit">Найти номер</button>
+          </form>
+        </div>
+      </section>
+            <section class="gallery">
+              <div class="gallery__wrapper">
+                <div class="gallery__img"><img src="media/img-p/gallery-imgs/img-1.jpg" alt=""/></div>
+                <div class="gallery__img"><img src="media/img-p/gallery-imgs/img-4.jpg" alt=""/></div>
+                <div class="gallery__img"><img src="media/img-p/gallery-imgs/img-7.jpg" alt=""/></div>
+                <div class="gallery__img"><img src="media/img-p/gallery-imgs/img-2.jpg" alt=""/></div>
+                <div class="gallery__img"><img src="media/img-p/gallery-imgs/img-5.jpg" alt=""/></div>
+                <div class="gallery__img"><img src="media/img-p/gallery-imgs/img-8.jpg" alt=""/></div>
+                <div class="gallery__img"><img src="media/img-p/gallery-imgs/img-3.jpg" alt=""/></div>
+                <div class="gallery__img"><img src="media/img-p/gallery-imgs/img-6.jpg" alt=""/></div>
+                <div class="gallery__img"><img src="media/img-p/gallery-imgs/img-9.jpg" alt=""/></div>
+                </div>
+              </div>
+            </section>
+    </main>
+    <footer class="site-footer">
+      <div class="site-footer__wrapper site-footer__top">
+        <div class="site-footer__logo"><img src="media/img/site-logo-foo.png" alt="Аэлита логотип"/></div>
+        <div class="site-footer__menu">
+          <ul class="site-footer__menu-list">
+            <li class="site-footer__menu-item"><a class="site-footer__menu-link" href="#">Номера</a></li>
+            <li class="site-footer__menu-item"><a class="site-footer__menu-link" href="#">Ресторан </a></li>
+            <li class="site-footer__menu-item"><a class="site-footer__menu-link" href="#">Спец. предложения</a></li>
+            <li class="site-footer__menu-item"><a class="site-footer__menu-link" href="#">Правила проживания</a></li>
+          </ul>
+          <ul class="site-footer__menu-list">
+            <li class="site-footer__menu-item"><a class="site-footer__menu-link" href="#">Описание отеля</a></li>
+            <li class="site-footer__menu-item"><a class="site-footer__menu-link" href="#">Фотогалерея</a></li>
+            <li class="site-footer__menu-item"><a class="site-footer__menu-link" href="#">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="site-footer__contacts">
+          <div class="site-footer__contact-links"><a class="site-footer__contact-link site-footer__contact-link--tel">+7 (902) 63 000 66</a><a class="site-footer__contact-link site-footer__contact-link--tel">+7 (342) 420-20-90</a><a class="site-footer__contact-link site-footer__contact-link--email">aelita-hotel@ya.ru</a></div>
+          <div class="site-footer__social"><a class="site-footer__social-item site-footer__social-item--bk" href="#">bk</a><a class="site-footer__social-item site-footer__social-item--ta" href="#">ta</a><a class="site-footer__social-item site-footer__social-item--vk" href="#">vk</a><a class="site-footer__social-item site-footer__social-item--fb" href="#">fb</a></div>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <div class="site-footer__wrapper">
+          <div class="site-footer__copyright">
+            <p>Отель «АЭЛИТА» г. Березники, ул. Пятилетки, 116а</p>
+            <p>© 2012 – 2018 г. Все права защищены.</p>
+          </div>
+          <div class="site-footer__developed-by">
+            <p>Разработка сайта <a href="#">PROSTOR design</a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>

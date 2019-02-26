@@ -1,0 +1,9 @@
+mixin gallery
+	section.gallery
+		.gallery__wrapper
+
+			mixin galleryImg(imgName)
+				.gallery__img
+					img(src="media/img-p/gallery-imgs/" + imgName + ".jpg", alt="")
+
+			block 

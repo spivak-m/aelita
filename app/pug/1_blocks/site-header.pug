@@ -1,0 +1,22 @@
+header.site-header
+	.site-header__wrapper.site-header__top
+		a(href="/").site-header__logo
+			img(src="media/img/site-logo.png", alt="Аэлита логотип")
+
+		.site-header__contacts
+			.site-header__contacts-block.site-header__contacts-block--tel
+				a.site-header__contacts-link.cl-setsel +7 (342) 420-20-90
+				a.site-header__contacts-link.cl-unsel +7 (902) 63 000 66 
+			//.site-header__contacts-block.site-header__contacts-block--addres
+				a.site-header__contacts-link г. Березники, <br>ул. Пятилетки, 116а
+			.site-header__contacts-block.site-header__contacts-block--feedback
+				a(href="#modalCall").site-header__contacts-feedback.js-modalCallOpen Обратная связь
+
+			.site-header__lang-switcher.select-lang
+				a(href="#").site-header__lang-switcher-item.site-header__lang-switcher-item--active RU
+				a(href="#").site-header__lang-switcher-item EN
+
+	.site-header__bottom
+		.site-header__wrapper
+			.site-header__menu
+				include header-menu

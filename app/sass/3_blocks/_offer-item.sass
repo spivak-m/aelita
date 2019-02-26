@@ -1,0 +1,126 @@
+.offer-item
+	width: 100%
+	background-position: 0 0, 100% 0
+	background-repeat: no-repeat
+	padding-top: 157px
+	padding-bottom: 165px
+	color: #fff
+	min-height: 612px
+
+	&--romantic
+		background-image: -webkit-linear-gradient(to right, rgba(47, 14, 14, 1) 0%, rgba(47, 14, 14, 1) 20%, rgba(47, 14, 14, 0) 100%), url(../media/img-p/bg-imgs/offer-romantic.jpg)
+		background-image: -o-linear-gradient(to right, rgba(47, 14, 14, 1) 0%, rgba(47, 14, 14, 1) 20%, rgba(47, 14, 14, 0) 100%), url(../media/img-p/bg-imgs/offer-romantic.jpg)
+		background-image: linear-gradient(to right, rgba(47, 14, 14, 1) 0%, rgba(47, 14, 14, 1) 20%, rgba(47, 14, 14, 0) 100%), url(../media/img-p/bg-imgs/offer-romantic.jpg)
+
+	&--weekend
+		background-image: -webkit-linear-gradient(to right, rgba(18,23,38, 1) 0%, rgba(18,23,38, 1) 20%, rgba(18,23,38, 0) 100%), url(../media/img-p/bg-imgs/img-3.jpg)
+		background-image: -o-linear-gradient(to right, rgba(18,23,38, 1) 0%, rgba(18,23,38, 1) 20%, rgba(18,23,38, 0) 100%), url(../media/img-p/bg-imgs/img-3.jpg)
+		background-image: linear-gradient(to right, rgba(18,23,38, 1) 0%, rgba(18,23,38, 1) 20%, rgba(18,23,38, 0) 100%), url(../media/img-p/bg-imgs/img-3.jpg)
+
+	&--8-march
+		background-image: -webkit-linear-gradient(to right, rgba(67, 9, 9, 1) 0%, rgba(67, 9, 9, 1) 20%, rgba(67, 9, 9, 0) 100%), url(../media/img-p/bg-imgs/offer-8-march.jpg)
+		background-image: -o-linear-gradient(to right, rgba(67, 9, 9, 1) 0%, rgba(67, 9, 9, 1) 20%, rgba(67, 9, 9, 0) 100%), url(../media/img-p/bg-imgs/offer-8-march.jpg)
+		background-image: linear-gradient(to right, rgba(67, 9, 9, 1) 0%, rgba(67, 9, 9, 1) 20%, rgba(67, 9, 9, 0) 100%), url(../media/img-p/bg-imgs/offer-8-march.jpg)
+
+.offer-item__wrapper
+	+container
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: column
+	align-items: center
+
+.offer-item__title
+	font-size: 48px
+	line-height: 50px
+	font-weight: 300
+	margin: 0
+	margin-bottom: 26px
+	padding-bottom: 26px
+	text-align: center
+	position: relative
+
+	&::before
+		content: ''
+		display: block
+		width: 58px
+		height: 10px
+		position: absolute
+		bottom: 0
+		left: 50%
+		margin-left: -29px
+		background: url(../media/img/sprite.svg) no-repeat 0px -5px
+
+.offer-item__content
+	width: 600px
+	color: inherit
+	opacity: .6
+	text-align: center
+	font-size: 18px
+	line-height: 32px
+	font-weight: 300
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: column
+	align-items: center
+	margin-bottom: 39px
+
+	p
+		margin: 0
+
+	span
+		font-size: 14px
+		line-height: 18px
+		margin-bottom: 4px
+
+	p + span
+		margin-top: 2px
+
+.offer-item__links
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: center
+
+.offer-item__link
+	color: #d7b56d
+	text-decoration: none
+	font-size: 14px
+	line-height: 16px
+
+	&--btn
+		padding: 12px 24px
+		background-color: #d7b56d
+		color: #fff
+		margin-right: 22px
+
+	&--closed
+		color: #fff
+		border: 1px solid #d7b56d
+		padding: 11px 18px 11px 46px
+		display: none
+		position: relative
+
+		&::before
+			content: ''
+			display: block
+			width: 14px
+			height: 20px
+			position: absolute
+			top: 50%
+			left: 16px
+			margin-top: -10px
+			background: url(../media/img/sprite.svg) no-repeat -227px -47px
+
+.offer-item--closed .offer-item__link
+	display: none
+
+.offer-item--closed .offer-item__link--closed
+	display: block

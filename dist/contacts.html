@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Аэлита | Контакты</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <link rel="stylesheet" href="css/media.css"/>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__wrapper site-header__top"><a class="site-header__logo" href="/"><img src="media/img/site-logo.png" alt="Аэлита логотип"/></a>
+        <div class="site-header__contacts">
+          <div class="site-header__contacts-block site-header__contacts-block--tel"><a class="site-header__contacts-link cl-setsel">+7 (342) 420-20-90</a><a class="site-header__contacts-link cl-unsel">+7 (902) 63 000 66 </a></div>
+          <!--.site-header__contacts-block.site-header__contacts-block--addresa.site-header__contacts-link г. Березники, <br>ул. Пятилетки, 116а
+          -->
+          <div class="site-header__contacts-block site-header__contacts-block--feedback"><a class="site-header__contacts-feedback js-modalCallOpen" href="#modalCall">Обратная связь</a></div>
+          <div class="site-header__lang-switcher select-lang"><a class="site-header__lang-switcher-item site-header__lang-switcher-item--active" href="#">RU</a><a class="site-header__lang-switcher-item" href="#">EN</a></div>
+        </div>
+        <a href="#menu-popup" class="site-header__hamburger"></a>
+      </div>
+      <div class="site-header__bottom">
+        <div class="site-header__wrapper">
+          <div class="site-header__menu">
+            <nav class="menu">
+              <ul class="menu__list" id="menu-header_menu">
+                <li class="menu__item"><a class="menu__link" href="index.html">Главная</a></li>
+                <li class="menu__item"><a class="menu__link" href="about.html">Описание отеля</a></li>
+                <li class="menu__item"><a class="menu__link" href="gallery.html">Фотогалерея</a></li>
+                <li class="menu__item"><a class="menu__link" href="offers.html">Спец. предложения</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Ресторан</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Правила проживания</a></li>
+                <li class="menu__item"><a class="menu__link" href="contacts.html">Контакты</a></li>
+              </ul>
+            </nav>
+            <div class="site-header__contacts">
+              <div class="site-header__contacts-block site-header__contacts-block--tel">
+                <a class="site-header__contacts-link cl-setsel">+7 (342) 420-20-90</a>
+                <a class="site-header__contacts-link cl-unsel">+7 (902) 63 000 66</a>
+              </div>
+              <div class="site-header__contacts-block site-header__contacts-block--addres">
+                <a class="site-header__contacts-link">г. Березники, <br>ул. Пятилетки, 116а</a>
+              </div>
+              <div class="site-header__contacts-block site-header__contacts-block--feedback">
+                <a class="site-header__contacts-feedback js-modalCallOpen" href="#modalCall">Обратная связь</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+            <section class="contacts contacts--with-bg">
+              <div class="contacts__wrapper">
+                <div class="contacts__aside">
+                  <h2 class="contacts__title">Контактная информация</h2>
+                  <p class="contacts__addres">Пермский край, г. Березники, ул. Пятилетки, 116а</p>
+                  <div class="contacts__tel-container"><a class="contacts__tel">+7 (902) 63 000 66</a><a class="contacts__tel">+7 (342) 420-20-90</a></div><a class="contacts__email">aelita-hotel@ya.ru</a>
+                  <div class="contacts__links-container"><a class="contacts__link contacts__link--question" href="#">Задать вопрос</a><a class="contacts__link contacts__link--road" href="#">Как доехать</a></div>
+                </div>
+              </div>
+              <div class="contacts__map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4062.550538671731!2d56.84227267719536!3d59.39511979899147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43edd3c0e3293591%3A0xf74cd562de96491c!2z0YPQuy4g0J_Rj9GC0LjQu9C10YLQutC4LCAxMTbQsCwg0JHQtdGA0LXQt9C90LjQutC4LCDQn9C10YDQvNGB0LrQuNC5INC60YDQsNC5LCA2MTg0MjY!5e0!3m2!1sru!2sru!4v1528104868629" width="auto" height="450" frameborder="0" style="border:0" allowfullscreen="allowfullscreen"></iframe>
+              </div>
+            </section>
+      <section class="booking">
+        <div class="booking__wrapper">
+          <div class="booking__title"><b>Забронировать номер</b></div>
+          <form class="booking__form" action="#" method="get">
+            <div class="booking__form-field-container">
+              <input class="booking__form-field booking__form-field--arrival" type="date" name="arrivalDate" value="2018-05-25"/>
+              <button class="booking__form-cal-btn" type="button"></button>
+            </div>
+            <div class="booking__form-field-container">
+              <input class="booking__form-field booking__form-field--departure" type="date" name="dateOfDeparture" value="2018-05-26"/>
+              <button class="booking__form-cal-btn" type="button"></button>
+            </div>
+            <button class="booking__form-submit" type="submit">Найти номер</button>
+          </form>
+        </div>
+      </section>
+      <section class="contacts-content">
+        <div class="contacts-content__wrapper">
+          <h2 class="contacts-content__title">Будем рады вас видеть в нашем отеле!</h2>
+          <p class="contacts-content__text">
+            Позвонив по указанному на сайте телефонам, Вы можете забронировать любой номер, который Вам 
+            понравится. На Ваш выбор предоставляются номера различной категории.
+            
+          </p>
+          <div class="contacts-content__block">
+            <h3 class="contacts-content__subtitle">Транспорт</h3>
+            <p class="contacts-content__text">
+              Аэлита расположена не далеко от въезда в жилую часть города и гарантирует своим гостям удобный 
+              доступ к транспортной инфраструктуре.
+              
+            </p>
+            <p class="contacts-content__text">
+              Рядом находится остановка «Газета Звезда»:
+              
+            </p>
+            <p class="contacts-content__transport-numbers contacts-content__transport-numbers--bus">9а, 14, 17, 18, 25, 30</p>
+            <p class="contacts-content__transport-numbers contacts-content__transport-numbers--abus">
+              5, 7
+              
+            </p>
+          </div>
+          <div class="contacts-content__block">
+            <h3 class="contacts-content__subtitle">Отдел кадров</h3><a class="contacts-content__link" href="#">email: aelita-job@ya.ru</a><a class="contacts-content__link">тел.: 8 (3424) 20 20 90</a>
+          </div>
+        </div>
+      </section>
+      <section class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4062.550538671731!2d56.84227267719536!3d59.39511979899147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43edd3c0e3293591%3A0xf74cd562de96491c!2z0YPQuy4g0J_Rj9GC0LjQu9C10YLQutC4LCAxMTbQsCwg0JHQtdGA0LXQt9C90LjQutC4LCDQn9C10YDQvNGB0LrQuNC5INC60YDQsNC5LCA2MTg0MjY!5e0!3m2!1sru!2sru!4v1528104868629" width="auto" height="450" frameborder="0" style="border:0" allowfullscreen="allowfullscreen"></iframe>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="site-footer__wrapper site-footer__top">
+        <div class="site-footer__logo"><img src="media/img/site-logo-foo.png" alt="Аэлита логотип"/></div>
+        <div class="site-footer__menu">
+          <ul class="site-footer__menu-list">
+            <li class="site-footer__menu-item"><a class="site-footer__menu-link" href="#">Номера</a></li>
+            <li class="site-footer__menu-item"><a class="site-footer__menu-link" href="#">Ресторан </a></li>
+            <li class="site-footer__menu-item"><a class="site-footer__menu-link" href="#">Спец. предложения</a></li>
+            <li class="site-footer__menu-item"><a class="site-footer__menu-link" href="#">Правила проживания</a></li>
+          </ul>
+          <ul class="site-footer__menu-list">
+            <li class="site-footer__menu-item"><a class="site-footer__menu-link" href="#">Описание отеля</a></li>
+            <li class="site-footer__menu-item"><a class="site-footer__menu-link" href="#">Фотогалерея</a></li>
+            <li class="site-footer__menu-item"><a class="site-footer__menu-link" href="#">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="site-footer__contacts">
+          <div class="site-footer__contact-links"><a class="site-footer__contact-link site-footer__contact-link--tel">+7 (902) 63 000 66</a><a class="site-footer__contact-link site-footer__contact-link--tel">+7 (342) 420-20-90</a><a class="site-footer__contact-link site-footer__contact-link--email">aelita-hotel@ya.ru</a></div>
+          <div class="site-footer__social"><a class="site-footer__social-item site-footer__social-item--bk" href="#">bk</a><a class="site-footer__social-item site-footer__social-item--ta" href="#">ta</a><a class="site-footer__social-item site-footer__social-item--vk" href="#">vk</a><a class="site-footer__social-item site-footer__social-item--fb" href="#">fb</a></div>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <div class="site-footer__wrapper">
+          <div class="site-footer__copyright">
+            <p>Отель «АЭЛИТА» г. Березники, ул. Пятилетки, 116а</p>
+            <p>© 2012 – 2018 г. Все права защищены.</p>
+          </div>
+          <div class="site-footer__developed-by">
+            <p>Разработка сайта <a href="#">PROSTOR design</a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>

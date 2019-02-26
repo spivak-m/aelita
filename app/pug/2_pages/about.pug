@@ -1,0 +1,56 @@
+extends ../0_base/template
+
+block pageName
+	title Аэлита | Об отеле
+
+block content
+	include ../1_blocks/page-header
+	
+	+pageHeader('Об отеле')().page-header--about
+		p.page-header__text.
+			Апарт-отель «Аэлита» является единственным в городе отелем с номерами категории 
+			«апартаменты» (номера квартирного типа, оборудованные кухней).
+
+	include ../1_blocks/booking
+	include ../1_blocks/about-hotel
+	include ../1_blocks/page-content
+	
+	+pageContent()
+		h2.page-content__title.
+			Какие преимущества <br>
+			получают наши гости?
+
+		ul.page-content__list
+			li.page-content__list-item.
+				Просторные номера квартирного типа, оборудованные всем для комфортного проживания, с 
+				полным гостиничным сервисом и набором услуг;
+			li.page-content__list-item.
+				В каждом номере - комфортабельная кухонная зона, оборудованная плитой, микроволновой 
+				печью, холодильником, полным комплектом посуды и другими нужными на кухне 
+				принадлежностями;
+			li.page-content__list-item.
+				Комплексный завтрак с 07:00 до 10:00 в уютном кафе-гриль «Гоголь-Моголь» (в выходные дни с 
+				10:00 до 12:00);
+			li.page-content__list-item.
+				Room Service – в вечернее время мы окажем Вам услугу по доставке блюд в номер от ресторана 
+				«Гоголь-Моголь» ;
+			li.page-content__list-item.
+				Бесплатная охраняемая парковка;
+			li.page-content__list-item.
+				Бесплатный Wi-Fi;
+			li.page-content__list-item.
+				Вызов такси в любое время.
+
+		p.page-content__subtitle Платные услуги:
+
+		ul.page-content__list
+			li.page-content__list-item.
+				Мини-бар;
+			li.page-content__list-item.
+				Услуги прачечной.
+
+		p.page-content__text.
+			Дружелюбный персонал отеля старается учитывать все Ваши пожелания и замечания, чтобы сделать 
+			Ваш отдых максимально комфортным.
+
+	include ../1_blocks/service

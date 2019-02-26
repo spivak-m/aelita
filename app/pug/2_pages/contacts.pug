@@ -1,0 +1,13 @@
+extends ../0_base/template
+
+block pageName
+	title Аэлита | Контакты
+
+block content
+	include ../1_blocks/contacts
+
+	+contacts().contacts--with-bg
+
+	include ../1_blocks/booking
+	include ../1_blocks/contacts-content
+	include ../1_blocks/map

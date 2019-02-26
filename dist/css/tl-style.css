@@ -1,0 +1,25 @@
+#block-search {
+    width: 100%;
+}
+
+.tl-container {
+    margin: 0 -5px;
+}
+
+.booking__wrapper {
+    padding-top: 24px;
+    padding-bottom: 36px;
+}
+
+#booking-page .page-header--about {
+    padding-top: 90px;
+    padding-bottom: 60px;
+}
+
+#booking-page .page-content__wrapper.block {
+    padding: 60px 20px 0;
+}
+
+#booking-page .site-footer__social {
+    display: none;
+}

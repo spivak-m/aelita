@@ -1,0 +1,107 @@
+.booking
+	background-color: #fff
+	color: #212b49
+	width: 100%
+	border-bottom: 1px solid #e4e4e4
+
+.booking__wrapper
+	+container
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: center
+	background-color: inherit
+	padding-top: 33px
+	padding-bottom: 41px
+
+.booking__title
+	width: 28.5%
+	padding-left: 73px
+	padding-right: 70px
+	font-size: 18px
+	line-height: 20px
+	position: relative
+
+	&::before
+		content: ''
+		display: block
+		width: 43px
+		height: 40px
+		margin-top: -20px
+		position: absolute
+		top: 50%
+		left: 3px
+		background: url(../media/img/sprite.svg) no-repeat 2px -33px
+
+.booking__form
+	width: 71.5%
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	padding-top: 6px
+
+.booking__form-field-container
+	flex-grow: 1
+	margin-right: 24px
+	position: relative
+	width: 33.3%
+
+.booking__form-field
+	width: 100%
+	border: 1px solid #e4e4e4
+	font-size: 16px
+	line-height: 18px
+	padding-top: 16px
+	padding-bottom: 2px
+	padding-left: 12px
+	padding-right: 30px
+	font-weight: 700
+	color: #212b49
+	position: relative
+
+	&::before
+		content: ''
+		display: block
+		position: absolute
+		top: 6px
+		left: 12px
+		color: #d7b56d
+		font-size: 13px
+		line-height: 13px
+		font-weight: 500
+
+	&--arrival::before
+		content: 'Заезд'
+
+	&--departure::before
+		content: 'Выезд'
+
+.booking__form-cal-btn
+	border: none
+	background-color: transparent
+	width: 20px
+	height: 22px
+	position: absolute
+	top: 50%
+	right: 8px
+	margin-top: -11px
+	cursor: pointer
+	background: url(../media/img/sprite.svg) no-repeat -245px 1px
+
+.booking__form-submit
+	flex-grow: 1
+	width: 33.3%
+	border: none
+	background-color: #212b49
+	color: #fff
+	font-size: 14px
+	font-weight: 700
+	text-transform: uppercase
+	cursor: pointer
+
+	&:hover
+		background-color: #d7b56d

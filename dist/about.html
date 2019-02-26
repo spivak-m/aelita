@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Аэлита | Об отеле</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <link rel="stylesheet" href="css/media.css"/>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__wrapper site-header__top"><a class="site-header__logo" href="/"><img src="media/img/site-logo.png" alt="Аэлита логотип"/></a>
+        <div class="site-header__contacts">
+          <div class="site-header__contacts-block site-header__contacts-block--tel"><a class="site-header__contacts-link cl-setsel">+7 (342) 420-20-90</a><a class="site-header__contacts-link cl-unsel">+7 (902) 63 000 66 </a></div>
+          <!--.site-header__contacts-block.site-header__contacts-block--addresa.site-header__contacts-link г. Березники, <br>ул. Пятилетки, 116а
+          -->
+          <div class="site-header__contacts-block site-header__contacts-block--feedback"><a class="site-header__contacts-feedback js-modalCallOpen" href="#modalCall">Обратная связь</a></div>
+          <div class="site-header__lang-switcher select-lang"><a class="site-header__lang-switcher-item site-header__lang-switcher-item--active" href="#">RU</a><a class="site-header__lang-switcher-item" href="#">EN</a></div>
+        </div>
+        <a href="#menu-popup" class="site-header__hamburger"></a>
+      </div>
+      <div class="site-header__bottom">
+        <div class="site-header__wrapper">
+          <div class="site-header__menu">
+            <nav class="menu">
+              <ul class="menu__list" id="menu-header_menu">
+                <li class="menu__item"><a class="menu__link" href="index.html">Главная</a></li>
+                <li class="menu__item"><a class="menu__link" href="about.html">Описание отеля</a></li>
+                <li class="menu__item"><a class="menu__link" href="gallery.html">Фотогалерея</a></li>
+                <li class="menu__item"><a class="menu__link" href="offers.html">Спец. предложения</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Ресторан</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Правила проживания</a></li>
+                <li class="menu__item"><a class="menu__link" href="contacts.html">Контакты</a></li>
+              </ul>
+            </nav>
+            <div class="site-header__contacts">
+              <div class="site-header__contacts-block site-header__contacts-block--tel">
+                <a class="site-header__contacts-link cl-setsel">+7 (342) 420-20-90</a>
+                <a class="site-header__contacts-link cl-unsel">+7 (902) 63 000 66</a>
+              </div>
+              <div class="site-header__contacts-block site-header__contacts-block--addres">
+                <a class="site-header__contacts-link">г. Березники, <br>ул. Пятилетки, 116а</a>
+              </div>
+              <div class="site-header__contacts-block site-header__contacts-block--feedback">
+                <a class="site-header__contacts-feedback js-modalCallOpen" href="#modalCall">Обратная связь</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+            <div class="page-header page-header--about">
+              <div class="page-header__wrapper">
+                <h2 class="page-header__title">Об отеле</h2>
+                <p class="page-header__text">
+                  Апарт-отель «Аэлита» является единственным в городе отелем с номерами категории 
+                  «апартаменты» (номера квартирного типа, оборудованные кухней).
+                  
+                </p>
+              </div>
+            </div>
+      <section class="booking">
+        <div class="booking__wrapper">
+          <div class="booking__title"><b>Забронировать номер</b></div>
+          <form class="booking__form" action="#" method="get">
+            <div class="booking__form-field-container">
+              <input class="booking__form-field booking__form-field--arrival" type="date" name="arrivalDate" value="2018-05-25"/>
+              <button class="booking__form-cal-btn" type="button"></button>
+            </div>
+            <div class="booking__form-field-container">
+              <input class="booking__form-field booking__form-field--departure" type="date" name="dateOfDeparture" value="2018-05-26"/>
+              <button class="booking__form-cal-btn" type="button"></button>
+            </div>
+            <button class="booking__form-submit" type="submit">Найти номер</button>
+          </form>
+        </div>
+      </section>
+      <section class="about-hotel">
+        <div class="about-hotel__wrapper">
+          <div class="about-hotel__content">
+            <p>
+              Отель прекрасно расположен территориально: 
+              рядом торговый центр, остановки, продуктовые 
+              магазины, аптеки, банкоматы. Расположение на 
+              центральной улице позволяет прогуляться вдоль 
+              города.
+            </p>
+          </div>
+        </div>
+      </section>
+            <section class="page-content">
+              <div class="page-content__wrapper">
+                <h2 class="page-content__title">
+                  Какие преимущества <br>
+                  получают наши гости?
+                  
+                </h2>
+                <ul class="page-content__list">
+                  <li class="page-content__list-item">
+                    Просторные номера квартирного типа, оборудованные всем для комфортного проживания, с 
+                    полным гостиничным сервисом и набором услуг;
+                  </li>
+                  <li class="page-content__list-item">
+                    В каждом номере - комфортабельная кухонная зона, оборудованная плитой, микроволновой 
+                    печью, холодильником, полным комплектом посуды и другими нужными на кухне 
+                    принадлежностями;
+                  </li>
+                  <li class="page-content__list-item">
+                    Комплексный завтрак с 07:00 до 10:00 в уютном кафе-гриль «Гоголь-Моголь» (в выходные дни с 
+                    10:00 до 12:00);
+                  </li>
+                  <li class="page-content__list-item">
+                    Room Service – в вечернее время мы окажем Вам услугу по доставке блюд в номер от ресторана 
+                    «Гоголь-Моголь» ;
+                  </li>
+                  <li class="page-content__list-item">Бесплатная охраняемая парковка;</li>
+                  <li class="page-content__list-item">Бесплатный Wi-Fi;</li>
+                  <li class="page-content__list-item">
+                    Вызов такси в любое время.
+                    
+                  </li>
+                </ul>
+                <p class="page-content__subtitle">Платные услуги:</p>
+                <ul class="page-content__list">
+                  <li class="page-content__list-item">Мини-бар;</li>
+                  <li class="page-content__list-item">
+                    Услуги прачечной.
+                    
+                  </li>
+                </ul>
+                <p class="page-content__text">
+                  Дружелюбный персонал отеля старается учитывать все Ваши пожелания и замечания, чтобы сделать 
+                  Ваш отдых максимально комфортным.
+                  
+                </p>
+              </div>
+            </section>
+      <section class="service">
+        <div class="service__wrapper"><b class="service__title">Услуги</b>
+          <div class="service__items">
+                  <div class="service__item">
+                    <div class="service__item-icon"><img src="media/img/i-food.png" width="36" height="47" alt=""/></div>
+                    <p class="service__item-text">Питание в кафе «Гоголь-Моголь»</p>
+                  </div>
+                  <div class="service__item">
+                    <div class="service__item-icon"><img src="media/img/i-bag.png" width="43" height="44" alt=""/></div>
+                    <p class="service__item-text">Возможность заказа питания на вынос</p>
+                  </div>
+                  <div class="service__item">
+                    <div class="service__item-icon"><img src="media/img/i-parking.png" width="19" height="46" alt=""/></div>
+                    <p class="service__item-text">Бесплатная охраняемая парковка</p>
+                  </div>
+                  <div class="service__item">
+                    <div class="service__item-icon"><img src="media/img/i-wash.png" width="44" height="44" alt=""/></div>
+                    <p class="service__item-text">Гостевая прачечная</p>
+                  </div>
+                  <div class="service__item">
+                    <div class="service__item-icon"><img src="media/img/i-tv.png" width="44" height="37" alt=""/></div>
+                    <p class="service__item-text">LCD телевизор в номере</p>
+                  </div>
+                  <div class="service__item">
+                    <div class="service__item-icon"><img src="media/img/i-route.png" width="44" height="37" alt=""/></div>
+                    <p class="service__item-text">Wi-Fi на всей территории</p>
+                  </div>
+                  <div class="service__item">
+                    <div class="service__item-icon"><img src="media/img/i-bath.png" width="47" height="46" alt=""/></div>
+                    <p class="service__item-text">Индивидуальные ванные</p>
+                  </div>
+                  <div class="service__item">
+                    <div class="service__item-icon"><img src="media/img/i-taxi.png" width="46" height="25" alt=""/></div>
+                    <p class="service__item-text">Вызов такси</p>
+                  </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="site-footer__wrapper site-footer__top">
+        <div class="site-footer__logo"><img src="media/img/site-logo-foo.png" alt="Аэлита логотип"/></div>
+        <div class="site-footer__menu">
+          <ul class="site-footer__menu-list">
+            <li class="site-footer__menu-item"><a class="site-footer__menu-link" href="#">Номера</a></li>
+            <li class="site-footer__menu-item"><a class="site-footer__menu-link" href="#">Ресторан </a></li>
+            <li class="site-footer__menu-item"><a class="site-footer__menu-link" href="#">Спец. предложения</a></li>
+            <li class="site-footer__menu-item"><a class="site-footer__menu-link" href="#">Правила проживания</a></li>
+          </ul>
+          <ul class="site-footer__menu-list">
+            <li class="site-footer__menu-item"><a class="site-footer__menu-link" href="#">Описание отеля</a></li>
+            <li class="site-footer__menu-item"><a class="site-footer__menu-link" href="#">Фотогалерея</a></li>
+            <li class="site-footer__menu-item"><a class="site-footer__menu-link" href="#">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="site-footer__contacts">
+          <div class="site-footer__contact-links"><a class="site-footer__contact-link site-footer__contact-link--tel">+7 (902) 63 000 66</a><a class="site-footer__contact-link site-footer__contact-link--tel">+7 (342) 420-20-90</a><a class="site-footer__contact-link site-footer__contact-link--email">aelita-hotel@ya.ru</a></div>
+          <div class="site-footer__social"><a class="site-footer__social-item site-footer__social-item--bk" href="#">bk</a><a class="site-footer__social-item site-footer__social-item--ta" href="#">ta</a><a class="site-footer__social-item site-footer__social-item--vk" href="#">vk</a><a class="site-footer__social-item site-footer__social-item--fb" href="#">fb</a></div>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <div class="site-footer__wrapper">
+          <div class="site-footer__copyright">
+            <p>Отель «АЭЛИТА» г. Березники, ул. Пятилетки, 116а</p>
+            <p>© 2012 – 2018 г. Все права защищены.</p>
+          </div>
+          <div class="site-footer__developed-by">
+            <p>Разработка сайта <a href="#">PROSTOR design</a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>

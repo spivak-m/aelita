@@ -1,0 +1,43 @@
+mixin room(title, price, description, img, roomLink)
+	article.rooms__item
+		.rooms__item-aside
+			h2.rooms__item-title= title
+			p.rooms__item-price от #{price} р./сутки
+			p.rooms__item-short-description= description
+			.rooms__item-links
+				a(href=roomLink).rooms__item-link.rooms__item-link--border Подробнее
+				a(href="#").rooms__item-link Забронировать
+
+		.rooms__item-img
+			img(src=img, alt="")
+
+section.rooms
+	.rooms__wrapper
+		.rooms__breakfast-promo
+			p
+				b Завтрак включен <br>
+				|в стоимость проживания
+
+		+room('Однокомнатные апартаменты', 
+			'2 900', 
+			'Уютный номер с одной спальней, площадью 40 м2, оборудованный всем для комфортного проживания 1-2 человек.', 
+			'media/img-p/room-1.jpg',
+			'#')
+		
+		+room('Двухкомнатные апартаменты', 
+			'3 300', 
+			'Двухкомнатный номер с двумя спальнями для комфортного размещения 2-4 гостей.', 
+			'media/img-p/room-2.jpg',
+			'#')
+
+		+room('Трехкомнатные апартаменты', 
+			'3 700', 
+			'Просторный трехкомнатный номер для большой компании (до 6 человек) или для свободного размещения 3-х человек.', 
+			'media/img-p/room-3.jpg',
+			'room.html')
+
+		+room('Люкс', 
+			'5 000', 
+			'Просторный двухэтажный номер с тремя комнатами, каждая из которых оборудована LCD-телевизором с улучшенным интерьером и двумя ванными комнатами.', 
+			'media/img-p/room-4.jpg',
+			'#')

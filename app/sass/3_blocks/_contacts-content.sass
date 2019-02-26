@@ -1,0 +1,77 @@
+.contacts-content
+	width: 100%
+	line-height: 24px
+	border-bottom: 1px solid #e4e4e4
+
+.contacts-content__wrapper
+	+container
+	padding-top: 60px
+	padding-bottom: 60px
+	padding-left: 120px
+	padding-right: 320px
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: column
+
+.contacts-content__block
+	margin-top: 38px
+
+.contacts-content__title
+	display: block
+	margin: 0
+	margin-bottom: 36px
+	font-size: 24px
+	line-height: 30px
+	color: #212b49
+	padding-right: 500px
+
+.contacts-content__subtitle
+	display: block
+	margin: 0
+	margin-bottom: 20px
+	font-size: 18px
+	line-height: 24px
+	color: #212b49
+
+.contacts-content__text
+	margin: 0
+	font-size: 16px
+	line-height: 24px
+	color: #1a1a1a
+
+.contacts-content__text + .contacts-content__text
+	margin-top: 16px
+
+.contacts-content__transport-numbers
+	margin: 0
+	margin-top: 16px
+	padding-left: 32px
+	position: relative
+
+	&::before
+		content: ''
+		display: block
+		width: 18px
+		height: 18px
+		position: absolute
+		top: 50%
+		left: 0
+		margin-top: -9px
+		background: url(../media/img/sprite.svg) no-repeat
+
+	&--bus::before
+		background-position: -120px -48px
+
+	&--abus::before
+		background-position: -76px -48px
+
+.contacts-content__link
+	display: block
+	margin: 0
+	font-size: 16px
+	line-height: 24px
+	color: #1a1a1a
+	text-decoration: none

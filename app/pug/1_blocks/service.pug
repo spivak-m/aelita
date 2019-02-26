@@ -1,0 +1,19 @@
+mixin serviceItem(iconName, iconWidth, iconHeight, itemText)
+	.service__item
+		.service__item-icon
+			img(src="media/img/" + iconName + ".png", width= iconWidth, height= iconHeight, alt="")
+		p.service__item-text= itemText
+
+section.service
+	.service__wrapper
+		b.service__title Услуги
+
+		.service__items
+			+serviceItem('i-food', '36', '47', 'Питание в кафе «Гоголь-Моголь»')
+			+serviceItem('i-bag', '43', '44', 'Возможность заказа питания на вынос')
+			+serviceItem('i-parking', '19', '46', 'Бесплатная охраняемая парковка')
+			+serviceItem('i-wash', '44', '44', 'Гостевая прачечная')
+			+serviceItem('i-tv', '44', '37', 'LCD телевизор в номере')
+			+serviceItem('i-route', '44', '37', 'Wi-Fi на всей территории')
+			+serviceItem('i-bath', '47', '46', 'Индивидуальные ванные')
+			+serviceItem('i-taxi', '46', '25', 'Вызов такси')

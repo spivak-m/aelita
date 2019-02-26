@@ -1,0 +1,135 @@
+.page-header
+	width: 100%
+	background-repeat: no-repeat
+	background-position: 0 0, 100% 0
+	color: #fff
+
+	&--about
+		padding-top: 139px
+		padding-bottom: 180px
+		background-image: -webkit-linear-gradient(to right, rgba(18, 23, 38, 1) 0%, rgba(18, 23, 38, 1) 20%, rgba(18, 23, 38, 0) 100%), url(../media/img-p/bg-imgs/img-3.jpg)
+		background-image: -o-linear-gradient(to right, rgba(18, 23, 38, 1) 0%, rgba(18, 23, 38, 1) 20%, rgba(18, 23, 38, 0) 100%), url(../media/img-p/bg-imgs/img-3.jpg)
+		background-image: linear-gradient(to right, rgba(18, 23, 38, 1) 0%, rgba(18, 23, 38, 1) 20%, rgba(18, 23, 38, 0) 100%), url(../media/img-p/bg-imgs/img-3.jpg)
+
+	&--gallery
+		padding-top: 90px
+		padding-bottom: 90px
+		background-image: -webkit-linear-gradient(to right, rgba(18, 23, 38, 1) 0%, rgba(18, 23, 38, 1) 20%, rgba(18, 23, 38, 0) 100%), url(../media/img-p/bg-imgs/img-4.jpg)
+		background-image: -o-linear-gradient(to right, rgba(18, 23, 38, 1) 0%, rgba(18, 23, 38, 1) 20%, rgba(18, 23, 38, 0) 100%), url(../media/img-p/bg-imgs/img-4.jpg)
+		background-image: linear-gradient(to right, rgba(18, 23, 38, 1) 0%, rgba(18, 23, 38, 1) 20%, rgba(18, 23, 38, 0) 100%), url(../media/img-p/bg-imgs/img-4.jpg)
+
+	&--room
+		padding-top: 110px
+		padding-bottom: 30px
+		background-image: -webkit-linear-gradient(to right, rgba(18, 23, 38, 1) 0%, rgba(18, 23, 38, 1) 20%, rgba(18, 23, 38, 0) 100%), url(../media/img-p/bg-imgs/img-6.jpg)
+		background-image: -o-linear-gradient(to right, rgba(18, 23, 38, 1) 0%, rgba(18, 23, 38, 1) 20%, rgba(18, 23, 38, 0) 100%), url(../media/img-p/bg-imgs/img-6.jpg)
+		background-image: linear-gradient(to right, rgba(18, 23, 38, 1) 0%, rgba(18, 23, 38, 1) 20%, rgba(18, 23, 38, 0) 100%), url(../media/img-p/bg-imgs/img-6.jpg)
+		background-position: 100% 50%
+
+	&--offer
+		padding-top: 120px
+		padding-bottom: 120px
+		background-image: -webkit-linear-gradient(to right, rgba(18, 23, 38, 1) 0%, rgba(18, 23, 38, 1) 20%, rgba(18, 23, 38, 0) 100%), url(../media/img-p/bg-imgs/offer-romantic.jpg)
+		background-image: -o-linear-gradient(to right, rgba(18, 23, 38, 1) 0%, rgba(18, 23, 38, 1) 20%, rgba(18, 23, 38, 0) 100%), url(../media/img-p/bg-imgs/offer-romantic.jpg)
+		background-image: linear-gradient(to right, rgba(18, 23, 38, 1) 0%, rgba(18, 23, 38, 1) 20%, rgba(18, 23, 38, 0) 100%), url(../media/img-p/bg-imgs/offer-romantic.jpg)
+
+.page-header__wrapper
+	+container
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: column
+	align-items: center
+
+.page-header__title
+	font-size: 48px
+	line-height: 50px
+	font-weight: 300
+	margin: 0
+	padding-bottom: 16px
+	position: relative
+
+	&::after
+		content: ''
+		display: block
+		width: 58px
+		height: 8px
+		position: absolute
+		bottom: -4px
+		left: 50%
+		margin-left: -29px
+		background: url(../media/img/sprite.svg) no-repeat 0px -6px
+
+	+ p
+		margin-top: 28px
+
+.page-header__links
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: center
+	margin-top: 35px
+
+.page-header__link
+	color: #d7b56d
+	text-decoration: none
+	font-size: 14px
+	line-height: 16px
+	font-weight: 700
+
+	&--btn
+		padding: 12px 24px
+		background-color: #d7b56d
+		color: #fff
+		font-weight: 400
+		margin-right: 22px
+
+	&:last-child
+		margin-right: 0
+
+.page-header__photo-link
+	margin-top: 62px
+	font-size: 14px
+	line-height: 24px
+	padding-left: 34px
+	opacity: .6
+	text-decoration: none
+	color: #fff
+	position: relative
+
+	&::before
+		content: ''
+		display: block
+		width: 20px
+		height: 17px
+		position: absolute
+		top: 50%
+		left: 0
+		margin-top: -8px
+		background: url(../media/img/sprite.svg) no-repeat -198px 0
+
+.page-header__text
+	font-size: 18px
+	line-height: 24px
+	font-weight: 300
+	color: #dee1eb
+	text-align: center
+	padding-left: 230px
+	padding-right: 230px
+	margin: 0
+	color: #dee1eb
+
+	+ .page-header__subtext
+		margin-top: 12px
+
+.page-header__subtext
+	display: block
+	font-size: 14px
+	line-height: 18px
+	margin-bottom: 8px
+	color: #dee1eb
+	font-weight: 300

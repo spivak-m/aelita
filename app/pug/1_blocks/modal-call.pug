@@ -1,0 +1,20 @@
+.modal-call.js-modalCallOver.js-modalCallBack#modalCall
+	form(action="#" method="post").modal-call__form.js-modalCall
+		h2.modal-call__title.
+			Заказать звонок
+
+		p.modal-call__text.
+			Оставьте свой номер, и мы вам перезвоним.
+
+		input(type="text" name="name" placeholder="Ваше имя*").modal-call__field
+		input(type="tel" name="tel" placeholder="Номер телефона*").modal-call__field
+
+		.modal-call__checkbox-wrapper
+			input(type="checkbox" name="privacy" id="privacy-checkbox").modal-call__checkbox
+			label(for="privacy-checkbox").modal-call__checkbox-label
+				|Согласен с 
+				a(href="#") политикой конфиденциальности
+
+		button(type="submit").modal-call__submit Отправить
+
+		button(type="button").modal-call__close.js-modalCallClose

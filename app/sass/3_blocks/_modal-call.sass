@@ -1,0 +1,109 @@
+.modal-call
+	position: fixed
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+	background-color: rgba(0, 0, 0, .6)
+	display: none
+	justify-content: center
+	align-items: center
+
+	&--show
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+
+.modal-call__form
+	width: 580px
+	padding-left: 40px
+	padding-right: 40px
+	padding-top: 35px
+	padding-bottom: 35px
+	background-color: #fff
+	font-size: 16px
+	line-height: 24px
+	position: relative
+
+.modal-call__title
+	margin: 0
+	font-size: 32px
+	line-height: 38px
+	color: #212b49
+	font-weight: 400
+	margin-bottom: 20px
+
+.modal-call__text
+	margin: 0
+	color: #696969
+	margin-bottom: 25px
+
+.modal-call__field
+	width: 100%
+	font-size: 14px
+	line-height: 24px
+	border: 1px solid #e4e4e4
+	padding: 8px 20px
+	margin-bottom: 20px
+
+.modal-call__checkbox-wrapper
+	margin-bottom: 20px
+
+.modal-call__checkbox
+	display: none
+
+	&:checked ~ .modal-call__checkbox-label::before
+		background: url(../media/img/sprite.svg) no-repeat -154px -2px
+
+.modal-call__checkbox-label
+	padding-left: 35px
+	position: relative
+
+	&::before
+		content: ''
+		display: block
+		width: 18px
+		height: 18px
+		border: 1px solid #e6e5e5
+		position: absolute
+		top: 50%
+		left: 0
+		margin-top: -9px
+		cursor: pointer
+
+.modal-call__submit
+	font-size: 14px
+	line-height: 24px
+	color: #fff
+	background-color: #d7b56d
+	border: none
+	padding: 8px 28px
+
+.modal-call__close
+	background-color: transparent
+	border: none
+	width: 24px
+	height: 24px
+	position: absolute
+	top: 35px
+	right: 40px
+	cursor: pointer
+
+	&::before,
+	&::after
+		content: ''
+		display: block
+		width: 30px
+		height: 1px
+		background-color: #989898
+		position: absolute
+		top: 11px
+		right: -3px
+
+	&::before
+		transform: rotate(45deg)
+
+	&::after
+		transform: rotate(-45deg)

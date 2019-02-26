@@ -1,0 +1,12 @@
+mixin offerItem(title, link)
+	.offer-item&attributes(attributes)
+		.offer-item__wrapper
+			h2.offer-item__title= title
+
+			.offer-item__content
+				block
+
+			.offer-item__links
+				a(href= link).offer-item__link.offer-item__link--btn Подробнее
+				a(href="#").offer-item__link Забронировать
+				a.offer-item__link.offer-item__link--closed Предложение закрыто

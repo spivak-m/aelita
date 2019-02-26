@@ -1,0 +1,126 @@
+.contacts
+	width: 100%
+	background-color: #fff
+	color: #212b49
+	position: relative
+
+	&--with-bg
+		background-image: -webkit-linear-gradient(to right, rgba(18, 23, 38, 1) 0%, rgba(18, 23, 38, 1) 20%, rgba(18, 23, 38, 0) 100%), url(../media/img-p/bg-imgs/img-5.jpg)
+		background-image: -o-linear-gradient(to right, rgba(18, 23, 38, 1) 0%, rgba(18, 23, 38, 1) 20%, rgba(18, 23, 38, 0) 100%), url(../media/img-p/bg-imgs/img-5.jpg)
+		background-image: linear-gradient(to right, rgba(18, 23, 38, 1) 0%, rgba(18, 23, 38, 1) 20%, rgba(18, 23, 38, 0) 100%), url(../media/img-p/bg-imgs/img-5.jpg)
+		background-repeat: no-repeat, no-repeat
+		background-position: 0 0, 100% 0
+		color: #fff
+
+.contacts--with-bg .contacts__map
+	display: none
+
+.contacts--with-bg .contacts__aside
+	padding-top: 90px
+	padding-right: 0
+	padding-bottom: 93px
+
+.contacts--with-bg .contacts__title
+	font-size: 48px
+
+.contacts__wrapper
+	+container()
+
+.contacts__map
+	position: absolute
+	top: 0
+	bottom: 0
+	right: 0
+	left: 41%
+	overflow: hidden
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: center
+	align-items: center
+
+	iframe
+		width: 100%
+		height: 100%
+
+.contacts__aside
+	padding-right: 700px
+	padding-top: 75px
+	padding-bottom: 75px
+
+.contacts__title
+	margin: 0
+	font-size: 38px
+	line-height: 40px
+	font-weight: 300
+	margin-bottom: 42px
+
+.contacts__addres
+	margin: 0
+	font-size: 18px
+	line-height: 20px
+	font-weight: 300
+	margin-bottom: 17px
+
+.contacts__tel-container
+	margin-bottom: 17px
+
+.contacts__tel
+	display: block
+	font-size: 24px
+	line-height: 26px
+	font-weight: 300
+	color: inherit
+	text-decoration: none
+	margin-bottom: 3px
+
+.contacts__email
+	display: block
+	font-size: 18px
+	line-height: 20px
+	font-weight: 300
+	color: inherit
+	text-decoration: none
+	margin-bottom: 50px
+
+.contacts__links-container
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+
+.contacts__link
+	font-size: 16px
+	line-height: 18px
+	font-weight: 500
+	color: #d7b56d
+	text-decoration: none
+	padding-left: 62px
+	position: relative
+	margin-right: 42px
+
+	&:hover
+		color: #212b49
+
+	&::before
+		content: ''
+		display: block
+		width: 46px
+		height: 46px
+		border: 1px solid #e6e6e6
+		border-radius: 50%
+		position: absolute
+		top: 50%
+		left: 0
+		margin-top: -23px
+		pointer-events: none
+		background: url(../media/img/sprite.svg) no-repeat
+
+	&--question::before
+		background-position: -160px -35px
+
+	&--road::before
+		background-position: -107px -35px

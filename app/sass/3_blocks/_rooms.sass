@@ -1,0 +1,131 @@
+.rooms
+	width: 100%
+	background-color: #f1f1f1
+
+.rooms__wrapper
+	+container
+	background-color: inherit
+	padding-top: 60px
+	padding-bottom: 60px
+
+.rooms__breakfast-promo
+	width: 100%
+	background-image: -webkit-linear-gradient(to right, rgba(218, 187, 120, 1) 0%, rgba(218, 187, 120, 1) 40%,  rgba(218, 187, 120, 0) 100%), url(../media/img-p/bg-imgs/img-2.jpg)
+	background-image: -o-linear-gradient(to right, rgba(218, 187, 120, 1) 0%, rgba(218, 187, 120, 1) 40%,  rgba(218, 187, 120, 0) 100%), url(../media/img-p/bg-imgs/img-2.jpg)
+	background-image: linear-gradient(to right, rgba(218, 187, 120, 1) 0%, rgba(218, 187, 120, 1) 40%,  rgba(218, 187, 120, 0) 100%), url(../media/img-p/bg-imgs/img-2.jpg)
+	background-repeat: no-repeat, no-repeat
+	background-position: 0 0, 100% 20%
+	outline: 1px solid #edddbc
+	outline-offset: -10px
+	padding-top: 24px
+	padding-bottom: 26px
+	padding-left: 120px
+	color: #fff
+	position: relative
+	margin-bottom: 20px
+
+	&::before
+		content: ''
+		display: block
+		width: 40px
+		height: 52px
+		position: absolute
+		top: 50%
+		left: 40px
+		margin-top: -26px
+		background: url(../media/img/sprite.svg) no-repeat 1px -98px
+
+	p
+		font-size: 18px
+		line-height: 23px
+		font-weight: 500
+		margin: 0
+
+	b
+		font-size: 24px
+		line-height: 26px
+
+.rooms__item
+	width: 100%
+	min-height: 360px
+	overflow: hidden
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	background-color: #fff
+	color: #212b49
+	outline: 1px solid #ecddbb
+	outline-offset: -10px
+	margin-bottom: 20px
+
+	&:last-child
+		margin-bottom: 0
+
+	&:nth-child(odd) .rooms__item-img
+		order: -1
+
+.rooms__item-aside
+	width: 42.4%
+	padding-top: 49px
+	padding-bottom: 49px
+	padding-left: 60px
+	padding-right: 90px
+
+.rooms__item-img
+	width: 57.6%
+	background-color: #f5f5f5
+
+.rooms__item-title
+	font-size: 24px
+	line-height: 30px
+	font-weight: 700
+	margin: 0
+	margin-bottom: 13px
+
+.rooms__item-price
+	font-size: 14px
+	line-height: 16px
+	font-weight: 500
+	color: #d7b56d
+	margin: 0
+	margin-bottom: 28px
+
+.rooms__item-short-description
+	font-size: 16px
+	line-height: 24px
+	margin: 0
+	margin-bottom: 23px
+
+.rooms__item-links
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+
+.rooms__item-link
+	font-size: 14px
+	line-height: 16px
+	color: #d7b56d
+	text-decoration: none
+	padding-top: 11px
+	padding-bottom: 11px
+	padding-left: 25px
+	padding-right: 25px
+	margin-right: 5px
+	border: 1px solid transparent
+
+	&:hover
+		border-color: #d7b56d
+
+	&--border:hover
+		background-color: #d7b56d
+		color: #fff
+
+	&--border
+		border-color: #d7b56d
+
+	&:last-child
+		margin-right: 0

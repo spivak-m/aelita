@@ -1,0 +1,15 @@
+section.booking
+	.booking__wrapper
+		.booking__title
+			b Забронировать номер
+
+		form(action="#" method="get").booking__form
+			.booking__form-field-container
+				input(type="date" name="arrivalDate" value="2018-05-25").booking__form-field.booking__form-field--arrival
+				button(type="button").booking__form-cal-btn
+
+			.booking__form-field-container
+				input(type="date" name="dateOfDeparture" value="2018-05-26").booking__form-field.booking__form-field--departure
+				button(type="button").booking__form-cal-btn
+
+			button(type="submit").booking__form-submit Найти номер

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Аэлита | Главная</title>
+    <meta name="viewport" content="width=device-width", initial-scale="1"/>
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <link rel="stylesheet" href="css/media.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__wrapper site-header__top"><a class="site-header__logo" href="/"><img src="media/img/site-logo.png" alt="Аэлита логотип"/></a>
+        <div class="site-header__contacts">
+          <div class="site-header__contacts-block site-header__contacts-block--tel"><a class="site-header__contacts-link cl-setsel">+7 (342) 420-20-90</a><a class="site-header__contacts-link cl-unsel">+7 (902) 63 000 66 </a></div>
+          <!--.site-header__contacts-block.site-header__contacts-block--addresa.site-header__contacts-link г. Березники, <br>ул. Пятилетки, 116а
+          -->
+          <div class="site-header__contacts-block site-header__contacts-block--feedback"><a class="site-header__contacts-feedback js-modalCallOpen" href="#modalCall">Обратная связь</a></div>
+          <div class="site-header__lang-switcher select-lang"><a class="site-header__lang-switcher-item site-header__lang-switcher-item--active" href="#">RU</a><a class="site-header__lang-switcher-item" href="#">EN</a></div>
+        </div>
+        <a href="#menu-popup" class="site-header__hamburger"></a>
+      </div>
+      <div class="site-header__bottom">
+        <div class="site-header__wrapper">
+          <div class="site-header__menu">
+            <nav class="menu">
+              <ul class="menu__list" id="menu-header_menu">
+                <li class="menu__item"><a class="menu__link" href="index.html">Главная</a></li>
+                <li class="menu__item"><a class="menu__link" href="about.html">Описание отеля</a></li>
+                <li class="menu__item"><a class="menu__link" href="gallery.html">Фотогалерея</a></li>
+                <li class="menu__item"><a class="menu__link" href="offers.html">Спец. предложения</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Ресторан</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Правила проживания</a></li>
+                <li class="menu__item"><a class="menu__link" href="contacts.html">Контакты</a></li>
+              </ul>
+            </nav>
+
+            <div class="site-header__contacts">
+              <div class="site-header__contacts-block site-header__contacts-block--tel">
+                <a class="site-header__contacts-link cl-setsel">+7 (342) 420-20-90</a>
+                <a class="site-header__contacts-link cl-unsel">+7 (902) 63 000 66</a>
+              </div>
+              <div class="site-header__contacts-block site-header__contacts-block--addres">
+                <a class="site-header__contacts-link">г. Березники, <br>ул. Пятилетки, 116а</a>
+              </div>
+              <div class="site-header__contacts-block site-header__contacts-block--feedback">
+                <a class="site-header__contacts-feedback js-modalCallOpen" href="#modalCall">Обратная связь</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="slider">
+        <div class="slider__item slider__item--1">
+          <div class="slider__wrapper"><b class="slider__item-title">
+              Единственный <br> 
+              апарт-отель в городе</b>
+            <p class="slider__item-content">
+              Номера квартирного типа, оборудованные кухней.
+              
+            </p>
+          </div>
+        </div>
+        <div class="slider__controls">
+          <div class="slider__controls-wrapper">
+            <button class="slider__controls-item slider__controls-item--active" type="button"></button>
+            <button class="slider__controls-item" type="button"></button>
+            <button class="slider__controls-item" type="button"></button>
+          </div>
+        </div>
+      </section>
+      <section class="booking">
+        <div class="booking__wrapper">
+          <div class="booking__title"><b>Забронировать номер</b></div>
+          <form class="booking__form" action="#" method="get">
+            <div class="booking__form-field-container">
+              <input class="booking__form-field booking__form-field--arrival" type="date" name="arrivalDate" value="2018-05-25"/>
+              <button class="booking__form-cal-btn" type="button"></button>
+            </div>
+            <div class="booking__form-field-container">
+              <input class="booking__form-field booking__form-field--departure" type="date" name="dateOfDeparture" value="2018-05-26"/>
+              <button class="booking__form-cal-btn" type="button"></button>
+            </div>
+            <button class="booking__form-submit" type="submit">Найти номер</button>
+          </form>
+        </div>
+      </section>
+      <section class="rooms">
+        <div class="rooms__wrapper">
+          <div class="rooms__breakfast-promo">
+            <p><b>Завтрак включен <br></b>в стоимость проживания</p>
+          </div>
+                <article class="rooms__item">
+                  <div class="rooms__item-aside">
+                    <h2 class="rooms__item-title">Однокомнатные апартаменты</h2>
+                    <p class="rooms__item-price">от 2 900 р./сутки</p>
+                    <p class="rooms__item-short-description">Уютный номер с одной спальней, площадью 40 м2, оборудованный всем для комфортного проживания 1-2 человек.</p>
+                    <div class="rooms__item-links"><a class="rooms__item-link rooms__item-link--border" href="#">Подробнее</a><a class="rooms__item-link" href="#">Забронировать</a></div>
+                  </div>
+                  <div class="rooms__item-img"><img src="media/img-p/room-1.jpg" alt=""/></div>
+                </article>
+                <article class="rooms__item">
+                  <div class="rooms__item-aside">
+                    <h2 class="rooms__item-title">Двухкомнатные апартаменты</h2>
+                    <p class="rooms__item-price">от 3 300 р./сутки</p>
+                    <p class="rooms__item-short-description">Двухкомнатный номер с двумя спальнями для комфортного размещения 2-4 гостей.</p>
+                    <div class="rooms__item-links"><a class="rooms__item-link rooms__item-link--border" href="#">Подробнее</a><a class="rooms__item-link" href="#">Забронировать</a></div>
+                  </div>
+                  <div class="rooms__item-img"><img src="media/img-p/room-2.jpg" alt=""/></div>
+                </article>
+                <article class="rooms__item">
+                  <div class="rooms__item-aside">
+                    <h2 class="rooms__item-title">Трехкомнатные апартаменты</h2>
+                    <p class="rooms__item-price">от 3 700 р./сутки</p>
+                    <p class="rooms__item-short-description">Просторный трехкомнатный номер для большой компании (до 6 человек) или для свободного размещения 3-х человек.</p>
+                    <div class="rooms__item-links"><a class="rooms__item-link rooms__item-link--border" href="room.html">Подробнее</a><a class="rooms__item-link" href="#">Забронировать</a></div>
+                  </div>
+                  <div class="rooms__item-img"><img src="media/img-p/room-3.jpg" alt=""/></div>
+                </article>
+                <article class="rooms__item">
+                  <div class="rooms__item-aside">
+                    <h2 class="rooms__item-title">Люкс</h2>
+                    <p class="rooms__item-price">от 5 000 р./сутки</p>
+                    <p class="rooms__item-short-description">Просторный двухэтажный номер с тремя комнатами, каждая из которых оборудована LCD-телевизором с улучшенным интерьером и двумя ванными комнатами.</p>
+                    <div class="rooms__item-links"><a class="rooms__item-link rooms__item-link--border" href="#">Подробнее</a><a class="rooms__item-link" href="#">Забронировать</a></div>
+                  </div>
+                  <div class="rooms__item-img"><img src="media/img-p/room-4.jpg" alt=""/></div>
+                </article>
+        </div>
+      </section>
+            <section class="contacts">
+              <div class="contacts__wrapper">
+                <div class="contacts__aside">
+                  <h2 class="contacts__title">Контактная информация</h2>
+                  <p class="contacts__addres">Пермский край, г. Березники, ул. Пятилетки, 116а</p>
+                  <div class="contacts__tel-container"><a class="contacts__tel">+7 (902) 63 000 66</a><a class="contacts__tel">+7 (342) 420-20-90</a></div><a class="contacts__email">aelita-hotel@ya.ru</a>
+                  <div class="contacts__links-container"><a class="contacts__link contacts__link--question" href="#">Задать вопрос</a><a class="contacts__link contacts__link--road" href="#">Как доехать</a></div>
+                </div>
+              </div>
+              <div class="contacts__map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4062.550538671731!2d56.84227267719536!3d59.39511979899147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43edd3c0e3293591%3A0xf74cd562de96491c!2z0YPQuy4g0J_Rj9GC0LjQu9C10YLQutC4LCAxMTbQsCwg0JHQtdGA0LXQt9C90LjQutC4LCDQn9C10YDQvNGB0LrQuNC5INC60YDQsNC5LCA2MTg0MjY!5e0!3m2!1sru!2sru!4v1528104868629" width="auto" height="450" frameborder="0" style="border:0" allowfullscreen="allowfullscreen"></iframe>
+              </div>
+            </section>
+      <div class="modal-call js-modalCallOver js-modalCallBack" id="modalCall">
+        <form class="modal-call__form js-modalCall" action="#" method="post">
+          <h2 class="modal-call__title">
+            Заказать звонок
+            
+          </h2>
+          <p class="modal-call__text">
+            Оставьте свой номер, и мы вам перезвоним.
+            
+          </p>
+          <input class="modal-call__field" type="text" name="name" placeholder="Ваше имя*"/>
+          <input class="modal-call__field" type="tel" name="tel" placeholder="Номер телефона*"/>
+          <div class="modal-call__checkbox-wrapper">
+            <input class="modal-call__checkbox" type="checkbox" name="privacy" id="privacy-checkbox"/>
+            <label class="modal-call__checkbox-label" for="privacy-checkbox">Согласен с <a href="#">политикой конфиденциальности</a></label>
+          </div>
+          <button class="modal-call__submit" type="submit">Отправить</button>
+          <button class="modal-call__close js-modalCallClose" type="button"></button>
+        </form>
+      </div>
+      <div class="modal-offer">
+        <div class="modal-offer__container">
+          <div class="modal-offer__img"><img src="media/img-p/romantic-img.jpg" alt=""/></div>
+          <div class="modal-offer__aside">
+            <h2 class="modal-offer__title">
+              Романтическая история
+              
+            </h2>
+            <p class="modal-offer__text">
+              Хотите незабываемо провести время со второй половинкой?
+              
+            </p>
+            <ul class="modal-offer__list">
+              <li class="modal-offer__list-item">номер и кровать усыпаны лепестками роз;</li>
+              <li class="modal-offer__list-item">мерцающие свечи украшают номер;</li>
+              <li class="modal-offer__list-item">завтрак в постель в любое время;</li>
+              <li class="modal-offer__list-item">фруктовая тарелка;</li>
+              <li class="modal-offer__list-item">шампанское и конфеты подарок от отеля;</li>
+            </ul>
+            <div class="modal-offer__links"><a class="modal-offer__link modal-offer__link--bg" href="#">Подробнее</a><a class="modal-offer__link" href="#">Забронировать</a></div>
+          </div>
+          <div class="modal-offer__btn-close"></div>
+        </div>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="site-footer__wrapper site-footer__top">
+        <div class="site-footer__logo"><img src="media/img/site-logo-foo.png" alt="Аэлита логотип"/></div>
+        <div class="site-footer__menu">
+          <ul class="site-footer__menu-list">
+            <li class="site-footer__menu-item"><a class="site-footer__menu-link" href="#">Номера</a></li>
+            <li class="site-footer__menu-item"><a class="site-footer__menu-link" href="#">Ресторан </a></li>
+            <li class="site-footer__menu-item"><a class="site-footer__menu-link" href="#">Спец. предложения</a></li>
+            <li class="site-footer__menu-item"><a class="site-footer__menu-link" href="#">Правила проживания</a></li>
+          </ul>
+          <ul class="site-footer__menu-list">
+            <li class="site-footer__menu-item"><a class="site-footer__menu-link" href="#">Описание отеля</a></li>
+            <li class="site-footer__menu-item"><a class="site-footer__menu-link" href="#">Фотогалерея</a></li>
+            <li class="site-footer__menu-item"><a class="site-footer__menu-link" href="#">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="site-footer__contacts">
+          <div class="site-footer__contact-links"><a class="site-footer__contact-link site-footer__contact-link--tel">+7 (902) 63 000 66</a><a class="site-footer__contact-link site-footer__contact-link--tel">+7 (342) 420-20-90</a><a class="site-footer__contact-link site-footer__contact-link--email">aelita-hotel@ya.ru</a></div>
+          <div class="site-footer__social"><a class="site-footer__social-item site-footer__social-item--bk" href="#">bk</a><a class="site-footer__social-item site-footer__social-item--ta" href="#">ta</a><a class="site-footer__social-item site-footer__social-item--vk" href="#">vk</a><a class="site-footer__social-item site-footer__social-item--fb" href="#">fb</a></div>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <div class="site-footer__wrapper">
+          <div class="site-footer__copyright">
+            <p>Отель «АЭЛИТА» г. Березники, ул. Пятилетки, 116а</p>
+            <p>© 2012 – 2018 г. Все права защищены.</p>
+          </div>
+          <div class="site-footer__developed-by">
+            <p>Разработка сайта <a href="#">PROSTOR design</a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>

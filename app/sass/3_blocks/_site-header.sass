@@ -1,0 +1,112 @@
+.site-header
+	width: 100%
+	background-color: #fff
+
+.site-header__top
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: center
+	padding-top: 25px
+	padding-bottom: 28px
+	color: #212b49
+
+.site-header__bottom
+	background-color: #212b49
+	color: #d7b56d
+
+.site-header__wrapper
+	+container
+	background-color: inherit
+
+.site-header__logo
+	width: 210px
+	height: 47px
+	margin-right: 91px
+
+.site-header__lang-switcher
+	margin-right: auto
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+
+.site-header__lang-switcher-item
+	margin-right: 16px
+	text-decoration: none
+	font-size: 12px
+	font-weight: 500
+	color: inherit
+
+	&:last-child
+		margin-right: 0
+
+	&--active
+		pointer-events: none
+		color: #b6b6b6
+
+.site-header__contacts
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+
+.site-header__contacts-block
+	width: 182px
+	margin-right: 19px
+
+	&:last-child
+		margin-right: 0
+
+	&--tel,
+	&--addres
+		padding-left: 46px
+		position: relative
+
+		&::before
+			content: ''
+			display: block
+			width: 34px
+			height: 34px
+			position: absolute
+			top: 50%
+			left: 0
+			margin-top: -17px
+			background-image: url(../media/img/sprite.svg)
+			background-repeat: no-repeat
+			border: 1px solid #e4e4e4
+			border-radius: 50%
+
+	&--tel::before
+		background-position: -67px 7px
+
+	&--addres::before
+		background-position: -103px 7px
+
+	&--feedback
+		width: 180px
+
+.site-header__contacts-link
+	display: block
+	text-decoration: none
+	font-size: 14px
+	font-weight: 500
+	color: inherit
+
+.site-header__contacts-feedback
+	display: block
+	text-decoration: none
+	text-align: center
+	padding-top: 10px
+	padding-bottom: 10px
+	border: 1px solid #d7b56d
+	color: #d7b56d
+	font-size: 14px
+
+	&:hover
+		background-color: #d7b56d
+		color: #fff

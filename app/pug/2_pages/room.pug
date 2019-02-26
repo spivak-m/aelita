@@ -1,0 +1,53 @@
+extends ../0_base/template
+
+block pageName
+	title Аелита | Номер
+
+block content
+	include ../1_blocks/page-header
+	include ../1_blocks/gallery
+	include ../1_blocks/page-content
+	include ../1_blocks/btn-link
+
+	+pageHeader('Трехкомнатные апартаменты')().page-header--room
+		p.page-header__text.
+			Просторный трехкомнатный номер для большой компании (до 6 человек)<br>
+			или для свободного размещения 3-х человек.
+		.page-header__links
+			+btnLink("#", "Забронировать").page-header__link--btn
+			span.page-header__link от 3 700 р./сутки
+		a(href="#").page-header__photo-link Фотографии номера
+
+	+pageContent()
+		h1.page-content__title.
+			Для вашего удобства <br>
+			номер оснащен:
+
+		ul.page-content__list
+			li.page-content__list-item кухонной зоной;
+			li.page-content__list-item обеденной зоной;
+			li.page-content__list-item мини-баром;
+			li.page-content__list-item большой гостиной с диваном;
+			li.page-content__list-item двумя двуспальными кроватями (или двуспальной и двумя односпальными);
+			li.page-content__list-item ванной комнатой;
+			li.page-content__list-item двумя LCD-телевизорами;
+			li.page-content__list-item тапочками, феном, туалетными принадлежностями, утюгом (по запросу);
+			li.page-content__list-item в стоимость номера включён завтрак в кафе-гриль «Гоголь-Моголь».
+
+		.page-content__blockquote
+			include ../1_blocks/room-price
+		.page-content__booking
+			include ../1_blocks/book-room
+
+	+gallery()
+		.gallery__col
+			+galleryImg('img-1')
+			+galleryImg('img-4')
+
+		.gallery__col
+			+galleryImg('img-2')
+			+galleryImg('img-5')
+			
+		.gallery__col
+			+galleryImg('img-3')
+			+galleryImg('img-6')

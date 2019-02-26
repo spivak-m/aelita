@@ -1,0 +1,28 @@
+extends ../0_base/template
+
+block pageName
+	title Аэлита | Галерея
+
+block content
+	include ../1_blocks/page-header
+
+	+pageHeader('Фотогалереея')().page-header--gallery
+
+	include ../1_blocks/booking
+	include ../1_blocks/gallery
+
+	+gallery()
+		.gallery__col
+			+galleryImg('img-1')
+			+galleryImg('img-4')
+			+galleryImg('img-7')
+
+		.gallery__col
+			+galleryImg('img-2')
+			+galleryImg('img-5')
+			+galleryImg('img-8')
+			
+		.gallery__col
+			+galleryImg('img-3')
+			+galleryImg('img-6')
+			+galleryImg('img-9')

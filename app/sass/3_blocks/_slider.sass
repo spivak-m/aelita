@@ -1,0 +1,82 @@
+.slider
+	width: 100%
+	position: relative
+
+.slider__item
+	background-size: cover
+
+	&--1
+		background-image: -webkit-linear-gradient(left, rgba(18, 23, 38, 1) 0%, rgba(18, 23, 38, 1) 20%, rgba(18, 23, 38, 0) 100%), url(../media/img-p/bg-imgs/img-1.jpg)
+		background-image: -o-linear-gradient(left, rgba(18, 23, 38, 1) 0%, rgba(18, 23, 38, 1) 20%, rgba(18, 23, 38, 0) 100%), url(../media/img-p/bg-imgs/img-1.jpg)
+		background-image: linear-gradient(to right, rgba(18, 23, 38, 1) 0%, rgba(18, 23, 38, 1) 20%, rgba(18, 23, 38, 0) 100%), url(../media/img-p/bg-imgs/img-1.jpg)
+		background-repeat: no-repeat, no-repeat
+		background-position: 0 0, 100% 50%
+
+.slider__wrapper
+	+container
+	padding-top: 114px
+	padding-bottom: 176px
+	padding-left: 92px
+	padding-right: 75px
+
+.slider__item-title
+	display: block
+	font-size: 48px
+	line-height: 58px
+	font-weight: 300
+	color: #fff
+	margin-bottom: 32px
+	position: relative
+
+	&::before
+		content: ''
+		display: block
+		width: 60px
+		height: 10px
+		position: absolute
+		top: 12px
+		left: -74px
+		background: url(../media/img/sprite.svg) no-repeat 2px -5px
+
+.slider__item-content
+	font-size: 18px
+	line-height: 24px
+	font-weight: 300
+	color: #fefefe
+	opacity: .6
+	margin: 0
+
+.slider__controls
+	position: absolute
+	left: 0
+	right: 0
+	bottom: 115px
+
+.slider__controls-wrapper
+	+container
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	margin: 0 auto
+	padding-left: 93px
+
+.slider__controls-item
+	width: 10px
+	height: 10px
+	margin-right: 17px
+	border: 1px solid #dabb78
+	border-radius: 50%
+	background-color: transparent
+	font-size: 0
+	line-height: 0
+	padding: 0
+	cursor: pointer
+
+	&:hover
+		background-color: #dabb78
+
+	&--active
+		pointer-events: none
+		background-color: #dabb78

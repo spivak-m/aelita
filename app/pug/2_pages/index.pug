@@ -1,0 +1,22 @@
+extends ../0_base/template
+
+block pageName
+	title Аэлита | Главная
+
+block headerScripts
+	script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
+
+block content
+	include ../1_blocks/slider
+	include ../1_blocks/booking
+	include ../1_blocks/rooms
+	include ../1_blocks/contacts
+
+	+contacts()
+
+	include ../1_blocks/modal-call
+	include ../1_blocks/modal-offer
+
+block scripts
+	script(src="js/script.js")
+		
